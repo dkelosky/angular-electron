@@ -83,5 +83,8 @@
   },
   "engines": {
     "node": ">=10.9.0"
+  },
+  "dependencies": {
+    "@zowe/cli": "^6.1.0"
   }
 }
