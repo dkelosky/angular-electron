@@ -18,3 +18,103 @@
 [2019/10/18 23:30:11.102] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
 [2019/10/18 23:30:11.106] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
 [2019/10/18 23:30:11.109] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:01:39.199] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:01:39.210] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:01:39.211] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:01:39.214] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:01:39.221] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:01:39.244] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:01:39.245] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:01:39.257] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:01:39.258] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:01:39.259] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:09:30.695] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:09:30.709] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:09:30.710] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:09:30.716] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:09:30.726] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:09:30.753] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:09:30.754] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:09:30.772] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:09:30.774] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:09:30.775] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:11:18.849] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:11:18.865] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:11:18.866] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:11:18.871] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:11:18.880] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:11:18.906] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:11:18.906] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:11:18.930] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:11:18.932] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:11:18.933] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:19:53.606] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:19:53.617] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:19:53.619] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:19:53.624] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:19:53.636] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:19:53.661] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:19:53.662] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:19:53.684] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:19:53.686] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:19:53.687] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:21:13.033] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:21:13.044] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:21:13.045] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:21:13.048] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:21:13.054] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:21:13.075] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:21:13.076] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:21:13.091] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:21:13.092] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:21:13.093] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:25:12.020] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:25:12.031] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:25:12.032] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:25:12.035] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:25:12.042] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:25:12.069] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:25:12.071] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:25:12.102] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:25:12.105] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:25:12.107] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:25:38.248] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:25:38.259] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:25:38.260] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:25:38.264] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:25:38.271] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:25:38.294] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:25:38.295] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:25:38.312] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:25:38.314] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:25:38.315] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:27:02.823] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:27:02.832] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:27:02.833] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:27:02.836] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:27:02.842] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:27:02.861] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:27:02.862] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:27:02.872] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:27:02.874] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:27:02.875] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:27:24.760] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:27:24.776] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:27:24.777] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:27:24.783] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:27:24.794] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:27:24.831] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:27:24.832] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:27:24.848] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:27:24.850] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:27:24.852] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
+[2019/10/25 12:27:54.773] [DEBUG] [ConfigManagementFacility.js:54] ConfigManagementFacility.init() - Start
+[2019/10/25 12:27:54.785] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'config'
+[2019/10/25 12:27:54.786] [DEBUG] [ConfigManagementFacility.js:69] ConfigManagementFacility.init() - Success
+[2019/10/25 12:27:54.789] [DEBUG] [PMFConstants.js:47] PMF node_modules: C:\Users\dk635460\.zowe\plugins\installed\node_modules
+[2019/10/25 12:27:54.798] [DEBUG] [PluginManagementFacility.js:137] PluginManagementFacility.init() - Start
+[2019/10/25 12:27:54.828] [DEBUG] [UpdateImpConfig.js:37] Adding definition = 'plugins'
+[2019/10/25 12:27:54.830] [DEBUG] [PluginManagementFacility.js:162] PluginManagementFacility.init() - Success
+[2019/10/25 12:27:54.863] [INFO] [PluginManagementFacility.js:301] All plugin configurations have been loaded. Details at trace level of logging.
+[2019/10/25 12:27:54.867] [WARN] [Imperative.js:377] Environmental setting for imperative log level ('ZOWE_IMPERATIVE_LOG_LEVEL') was blank.
+[2019/10/25 12:27:54.870] [WARN] [Imperative.js:395] Environmental setting for app log level ('ZOWE_APP_LOG_LEVEL') was blank.
