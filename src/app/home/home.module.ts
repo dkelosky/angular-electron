@@ -6,9 +6,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, ToolbarComponent],
   imports: [CommonModule,
     SharedModule,
     HomeRoutingModule,

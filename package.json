@@ -89,6 +89,7 @@
     "node": ">=10.9.0"
   },
   "dependencies": {
-    "@zowe/cli": "^6.1.0"
+    "@zowe/cli": "^6.1.0",
+    "hammerjs": "^2.0.8"
   }
 }

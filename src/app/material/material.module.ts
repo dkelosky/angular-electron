@@ -2,8 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatDividerModule, MatCardModule } from '@angular/material';
-// import { HomeComponent } from './home/home.component';
+import { MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatDividerModule,
+  MatCardModule,
+  MatPaginatorModule,
+  MatTableModule,
+} from '@angular/material';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [],
@@ -12,11 +20,19 @@ import { MatToolbarModule, MatIconModule, MatButtonModule, MatDividerModule, Mat
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
+    MatToolbarModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FlexLayoutModule,
   ],
   exports: [
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
+    MatToolbarModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FlexLayoutModule,
   ]
 })
 export class MaterialModule { }

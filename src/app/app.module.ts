@@ -1,3 +1,5 @@
+  
+import 'hammerjs';
 import 'reflect-metadata';
 import '../polyfills';
 
