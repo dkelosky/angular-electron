@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule,
+import {
+  MatToolbarModule,
   MatIconModule,
   MatButtonModule,
   MatDividerModule,
+  MatMenuModule,
   MatCardModule,
   MatPaginatorModule,
   MatTableModule,
@@ -19,6 +21,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatMenuModule,
     MatCardModule,
     MatToolbarModule,
     MatPaginatorModule,
@@ -28,6 +33,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   exports: [
     BrowserAnimationsModule,
     MatIconModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatMenuModule,
     MatCardModule,
     MatToolbarModule,
     MatPaginatorModule,

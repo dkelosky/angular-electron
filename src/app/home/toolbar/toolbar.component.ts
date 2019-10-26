@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from '../../core/services/profiles/profile.service';
+import { IProfileLoaded } from '@zowe/imperative';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  profiles: IProfileLoaded[] = [];
+  currentProfile: IProfileLoaded;
 
-  ngOnInit() {
+  constructor(private ps: ProfileService) { }
+
+  async ngOnInit() {
+    this.currentProfile = await this.ps.getZosmfDefault();
+    this.profiles = (await this.ps.getAllZosmf()).filter((prof) => prof.name !== this.currentProfile.name);
   }
 
 }
