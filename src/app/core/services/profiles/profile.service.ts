@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ElectronService } from '../electron/electron.service';
-import { CliProfileManager } from '@zowe/imperative';
+import { CliProfileManager, IProfileLoaded } from '@zowe/imperative';
 import { ImperativeService } from '../imperative/imperative.service';
 
 @Injectable({
@@ -8,6 +8,7 @@ import { ImperativeService } from '../imperative/imperative.service';
 })
 export class ProfileService {
 
+  private currentProf: IProfileLoaded;
   cliProfileManager: typeof CliProfileManager;
 
   constructor(private es: ElectronService, private is: ImperativeService) {
@@ -38,5 +39,13 @@ export class ProfileService {
       return profile.type === `zosmf`;
     });
 
+  }
+
+  set current(profile: IProfileLoaded) {
+    this.currentProf = profile;
+  }
+
+  get current() {
+    return this.currentProf;
   }
 }

@@ -9,11 +9,15 @@ import {
   MatDividerModule,
   MatMenuModule,
   MatCardModule,
+  MatFormFieldModule,
   MatPaginatorModule,
   MatTableModule,
+  MatInputModule,
+  MatSortModule,
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -25,9 +29,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatDividerModule,
     MatMenuModule,
     MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatToolbarModule,
     MatPaginatorModule,
     MatTableModule,
+    MatSortModule,
+    FormsModule,
     FlexLayoutModule,
   ],
   exports: [
@@ -37,9 +45,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatDividerModule,
     MatMenuModule,
     MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatToolbarModule,
     MatPaginatorModule,
     MatTableModule,
+    MatSortModule,
+    FormsModule,
     FlexLayoutModule,
   ]
 })

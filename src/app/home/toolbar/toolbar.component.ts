@@ -15,8 +15,13 @@ export class ToolbarComponent implements OnInit {
   constructor(private ps: ProfileService) { }
 
   async ngOnInit() {
-    this.currentProfile = await this.ps.getZosmfDefault();
+    this.setCurrent();
     this.profiles = (await this.ps.getAllZosmf()).filter((prof) => prof.name !== this.currentProfile.name);
+  }
+
+  async setCurrent() {
+    this.currentProfile = await this.ps.getZosmfDefault();
+    this.ps.current = this.currentProfile;
   }
 
 }
