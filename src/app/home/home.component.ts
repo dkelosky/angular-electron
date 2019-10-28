@@ -34,9 +34,13 @@ export class HomeComponent implements OnInit {
   }
 
   async ngOnInit() {
-    await this.getJobs();
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
+    await this.js.init();
+
+    this.js.selectedJobs.subscribe((jobs) => {
+      this.dataSource.data = jobs;
+    });
   }
 
   applyFilter(filterValue: string) {
@@ -48,7 +52,4 @@ export class HomeComponent implements OnInit {
     this.expandedJob = this.expandedJob === job ? null : job;
   }
 
-  async getJobs() {
-    this.dataSource.data = await this.js.getAllJobs();
-  }
 }

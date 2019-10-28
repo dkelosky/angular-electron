@@ -2,22 +2,33 @@ import { Injectable } from '@angular/core';
 import { ElectronService } from '../electron/electron.service';
 import { CliProfileManager, IProfileLoaded } from '@zowe/imperative';
 import { ImperativeService } from '../imperative/imperative.service';
+import { Subject, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
 
-  private currentProf: IProfileLoaded;
+  private initialized = false;
+
   cliProfileManagerApi: typeof CliProfileManager;
+
+  selectedProfile: BehaviorSubject<IProfileLoaded> = new BehaviorSubject(null);
 
   constructor(private es: ElectronService, private is: ImperativeService) {
     if (this.es.isElectron) {
       this.cliProfileManagerApi = window.require('@zowe/imperative').CliProfileManager;
     }
+
+    this.init();
   }
 
-  async getZosmfDefault() {
+  private async init() {
+    const profile = await this.getZosmfDefault();
+    this.current = profile;
+  }
+
+  private async getZosmfDefault() {
     await this.is.init();
 
     return new this.cliProfileManagerApi({
@@ -38,14 +49,9 @@ export class ProfileService {
     return profiles.filter((profile) => {
       return profile.type === `zosmf`;
     });
-
   }
 
   set current(profile: IProfileLoaded) {
-    this.currentProf = profile;
-  }
-
-  get current() {
-    return this.currentProf;
+    this.selectedProfile.next(profile);
   }
 }
