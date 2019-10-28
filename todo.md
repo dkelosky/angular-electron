@@ -1,4 +1,6 @@
 
 * download / save output
-* switch profiles
-* interval
+* profile creation
+* settings for sort order
+* interval setting
+* theme chooser

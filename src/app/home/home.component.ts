@@ -2,9 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-/**
- * @title Data table with sorting, pagination, and filtering.
- */
 @Component({
   selector: 'app-home',
   styleUrls: ['./home.component.scss'],
@@ -36,8 +33,8 @@ export class HomeComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  test(element) {
-    console.log(`called with ${element.name}`);
+  setExpanded(element) {
+    console.log(`Expanded trigger clicked for ${element.name}`);
     this.expandedElement = this.expandedElement === element ? null : element;
   }
 }
