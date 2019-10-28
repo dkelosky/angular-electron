@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {CdkTableModule} from '@angular/cdk/table';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatToolbarModule,
@@ -24,6 +26,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
+    CdkTableModule,
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
@@ -40,6 +43,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [
     BrowserAnimationsModule,
+    CdkTableModule,
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
