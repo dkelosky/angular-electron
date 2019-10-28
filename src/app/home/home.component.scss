@@ -11,24 +11,24 @@ tr.example-detail-row {
   height: 0;
 }
 
-tr.example-element-row:not(.example-expanded-row):hover {
+tr.example-job-row:not(.example-expanded-row):hover {
   background: #777;
 }
 
-tr.example-element-row:not(.example-expanded-row):active {
+tr.example-job-row:not(.example-expanded-row):active {
   background: #efefef;
 }
 
-.example-element-row td {
+.example-job-row td {
   border-bottom-width: 0;
 }
 
-.example-element-detail {
+.example-job-detail {
   overflow: hidden;
   display: flex;
 }
 
-.example-element-diagram {
+.example-job-diagram {
   min-width: 80px;
   border: 2px solid black;
   padding: 8px;
@@ -37,16 +37,16 @@ tr.example-element-row:not(.example-expanded-row):active {
   height: 104px;
 }
 
-.example-element-symbol {
+.example-job-symbol {
   font-weight: bold;
   font-size: 40px;
   line-height: normal;
 }
 
-.example-element-description {
+.example-job-description {
   padding: 16px;
 }
 
-.example-element-description-attribution {
+.example-job-description-attribution {
   opacity: 0.5;
 }
