@@ -16,6 +16,8 @@ import {
   MatTableModule,
   MatInputModule,
   MatSortModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -38,6 +40,8 @@ import { FormsModule } from '@angular/forms';
     MatPaginatorModule,
     MatTableModule,
     MatSortModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
     FormsModule,
     FlexLayoutModule,
   ],
@@ -55,6 +59,8 @@ import { FormsModule } from '@angular/forms';
     MatPaginatorModule,
     MatTableModule,
     MatSortModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
     FormsModule,
     FlexLayoutModule,
   ]
