@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
   test(element) {
     console.log(`called with ${element.name}`);
     this.expandedElement = this.expandedElement === element ? null : element;
