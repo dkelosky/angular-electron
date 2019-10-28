@@ -4,3 +4,5 @@
 * settings for sort order
 * interval setting
 * theme chooser
+* test no profiles exist
+* 

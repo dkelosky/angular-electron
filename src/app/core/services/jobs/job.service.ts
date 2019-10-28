@@ -8,17 +8,17 @@ import { SessionService } from '../session/session.service';
 })
 export class JobService {
 
-  getJobs: typeof GetJobs;
+  getJobsApi: typeof GetJobs;
 
   constructor(private es: ElectronService, private ss: SessionService, private js: JobService) {
     if (this.es.isElectron) {
-      this.getJobs = window.require('@zowe/cli').GetJobs;
+      this.getJobsApi = window.require('@zowe/cli').GetJobs;
     }
   }
 
   async getAllJobs() {
     const session = await this.ss.getZosmfSession();
-    return await this.getJobs.getJobs(session);
+    return await this.getJobsApi.getJobs(session);
   }
 
 }

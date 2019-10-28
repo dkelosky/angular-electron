@@ -9,18 +9,21 @@ import { ProfileService } from '../profiles/profile.service';
 })
 export class SessionService {
 
-  session: typeof Session;
-  zosmfSession: typeof ZosmfSession;
+  sessionApi: typeof Session;
+  zosmfSessionApi: typeof ZosmfSession;
 
   constructor(private es: ElectronService, private ps: ProfileService) {
     if (this.es.isElectron) {
-      this.session = window.require('@zowe/imperative').Session;
-      this.zosmfSession = window.require('@zowe/cli').ZosmfSession;
+      this.sessionApi = window.require('@zowe/imperative').Session;
+      this.zosmfSessionApi = window.require('@zowe/cli').ZosmfSession;
     }
   }
 
   async getZosmfSession() {
-    const profile = await this.ps.getZosmfDefault();
-    return this.zosmfSession.createBasicZosmfSession(profile.profile);
+    if (!this.ps.current) {
+      this.ps.current = await this.ps.getZosmfDefault();
+    }
+    console.log(`Getting profile from ${this.ps.current.name}`);
+    return this.zosmfSessionApi.createBasicZosmfSession(this.ps.current.profile);
   }
 }

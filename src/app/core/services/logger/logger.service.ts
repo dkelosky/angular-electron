@@ -7,17 +7,17 @@ import { Logger, LoggingConfigurer } from '@zowe/imperative';
 })
 export class LoggerService {
 
-  logger: typeof Logger;
-  loggingConfigurer: typeof LoggingConfigurer;
+  loggerApi: typeof Logger;
+  loggingConfigurerApi: typeof LoggingConfigurer;
 
   constructor(private electron: ElectronService) {
 
     if (this.electron.isElectron) {
-      this.logger = window.require('@zowe/imperative').Logger;
-      this.loggingConfigurer = window.require('@zowe/imperative').LoggingConfigurer;
+      this.loggerApi = window.require('@zowe/imperative').Logger;
+      this.loggingConfigurerApi = window.require('@zowe/imperative').LoggingConfigurer;
 
       // init dummy logger for imperative
-      this.logger.initLogger(this.loggingConfigurer.configureLogger('.zowe-electron', { name: 'zowe-electon' }));
+      this.loggerApi.initLogger(this.loggingConfigurerApi.configureLogger('.zowe-electron', { name: 'zowe-electon' }));
     }
 
   }

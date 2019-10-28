@@ -7,13 +7,13 @@ import { Imperative, ImperativeConfig } from '@zowe/imperative';
 })
 export class ImperativeService {
 
-  imperative: typeof Imperative;
-  imperativeConfig: typeof ImperativeConfig;
+  imperativeApi: typeof Imperative;
+  imperativeConfigApi: typeof ImperativeConfig;
   private initialized = false;
 
   constructor(private es: ElectronService) {
-    this.imperative = window.require('@zowe/imperative').Imperative;
-    this.imperativeConfig = window.require('@zowe/imperative').ImperativeConfig;
+    this.imperativeApi = window.require('@zowe/imperative').Imperative;
+    this.imperativeConfigApi = window.require('@zowe/imperative').ImperativeConfig;
   }
 
   async init() {
@@ -24,6 +24,6 @@ export class ImperativeService {
     const mainZoweDir = this.es.path.join(window.require.resolve('@zowe/cli'), '..', '..', '..', '..');
     (process.mainModule as any).filename = window.require.resolve('@zowe/cli');
     ((process.mainModule as any).paths as any).unshift(mainZoweDir);
-    await this.imperative.init({ configurationModule: window.require.resolve('@zowe/cli/lib/imperative.js') });
+    await this.imperativeApi.init({ configurationModule: window.require.resolve('@zowe/cli/lib/imperative.js') });
   }
 }

@@ -9,19 +9,19 @@ import { ImperativeService } from '../imperative/imperative.service';
 export class ProfileService {
 
   private currentProf: IProfileLoaded;
-  cliProfileManager: typeof CliProfileManager;
+  cliProfileManagerApi: typeof CliProfileManager;
 
   constructor(private es: ElectronService, private is: ImperativeService) {
     if (this.es.isElectron) {
-      this.cliProfileManager = window.require('@zowe/imperative').CliProfileManager;
+      this.cliProfileManagerApi = window.require('@zowe/imperative').CliProfileManager;
     }
   }
 
   async getZosmfDefault() {
     await this.is.init();
 
-    return new this.cliProfileManager({
-      profileRootDirectory: this.es.path.join(this.is.imperativeConfig.instance.cliHome, 'profiles'),
+    return new this.cliProfileManagerApi({
+      profileRootDirectory: this.es.path.join(this.is.imperativeConfigApi.instance.cliHome, 'profiles'),
       type: 'zosmf'
     }).load({ loadDefault: true });
 
@@ -30,8 +30,8 @@ export class ProfileService {
   async getAllZosmf() {
     await this.is.init();
 
-    const profiles = await new this.cliProfileManager({
-      profileRootDirectory: this.es.path.join(this.is.imperativeConfig.instance.cliHome, 'profiles'),
+    const profiles = await new this.cliProfileManagerApi({
+      profileRootDirectory: this.es.path.join(this.is.imperativeConfigApi.instance.cliHome, 'profiles'),
       type: `zosmf`
     }).loadAll();
 

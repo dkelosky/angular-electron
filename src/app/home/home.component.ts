@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { JobService } from '../core/services/jobs/job.service';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
+  constructor(private js: JobService) {
+
+  }
+
   ngOnInit() {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
@@ -36,6 +41,10 @@ export class HomeComponent implements OnInit {
   setExpanded(element) {
     console.log(`Expanded trigger clicked for ${element.name}`);
     this.expandedElement = this.expandedElement === element ? null : element;
+  }
+
+  getJobs() {
+    // this.js.
   }
 }
 
