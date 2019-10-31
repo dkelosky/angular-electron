@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { JobService } from '../core/services/jobs/job.service';
@@ -18,28 +18,30 @@ import { IJob } from '@zowe/cli';
   ],
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements AfterViewInit  {
 
   dataSource = new MatTableDataSource<IJob>([]);
 
-  columnsToDisplay = ['name', 'id', 'status', 'code']; // IJob column titles
-  columnsToDisplayKey = ['jobname', 'jobid', 'status', 'retcode']; // IJob keys
+  columnsToDisplay = ['jobname', 'jobid', 'status', 'retcode']; // IJob column titles
 
   expandedJob: IJob | null;
 
-  @ViewChild(MatSort, { static: true }) sort: MatSort;
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
 
   constructor(private js: JobService) {
   }
 
-  async ngOnInit() {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+  async ngAfterViewInit() {
+
+    this.sort.sortChange.subscribe(() => this.paginator.pageIndex = 0);
+
     await this.js.init();
 
     this.js.selectedJobs.subscribe((jobs) => {
       this.dataSource.data = jobs;
+      this.dataSource.sort = this.sort;
+      this.dataSource.paginator = this.paginator;
     });
   }
 
