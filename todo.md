@@ -12,4 +12,3 @@
 ## BUGS
 
 * on initial load we always need to refresh
-* 
