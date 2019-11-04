@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import {CdkTableModule} from '@angular/cdk/table';
+import { CdkTableModule } from '@angular/cdk/table';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -20,6 +20,7 @@ import {
   MatProgressSpinnerModule,
   MatTabsModule,
   MatListModule,
+  MatCheckboxModule,
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -46,6 +47,7 @@ import { FormsModule } from '@angular/forms';
     MatSortModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatCheckboxModule,
     FormsModule,
     FlexLayoutModule,
   ],
@@ -67,6 +69,7 @@ import { FormsModule } from '@angular/forms';
     MatSortModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatCheckboxModule,
     FormsModule,
     FlexLayoutModule,
   ]
