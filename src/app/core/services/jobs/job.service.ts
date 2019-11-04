@@ -17,8 +17,6 @@ export class JobService {
     if (this.es.isElectron) {
       this.getJobsApi = window.require('@zowe/cli').GetJobs;
     }
-
-    this.init();
   }
 
   async init() {

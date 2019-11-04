@@ -58,10 +58,12 @@ export class ProfileService {
    * @memberof ProfileService
    */
   set current(profile: IProfileLoaded) {
+    console.log(`Setting next current`);
     this.selectedProfile.next(profile);
   }
 
   private set all(profiles: IProfileLoaded[]) {
+    console.log(`Setting next all`);
     this.allProfiles.next(profiles);
   }
 }
