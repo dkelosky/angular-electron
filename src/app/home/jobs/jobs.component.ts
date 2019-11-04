@@ -8,7 +8,7 @@ import { IJob } from '@zowe/cli';
 @Component({
   selector: 'app-jobs',
   templateUrl: './jobs.component.html',
-  styleUrls: ['./jobs.component.scss'],
+  styleUrls: ['./jobs.component.scss', '../home.component.scss'],
   animations: [
     trigger('detailExpand', [
       state('collapsed, void', style({ height: '0px', minHeight: '0', display: 'none' })),
