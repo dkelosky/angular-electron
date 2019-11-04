@@ -40,9 +40,12 @@ export class JobsComponent implements AfterViewInit {
     await this.js.init();
 
     this.js.selectedJobs.subscribe((jobs) => {
-      this.dataSource.data = jobs;
-      this.dataSource.sort = this.sort;
-      this.dataSource.paginator = this.paginator;
+
+      if (jobs) {
+        this.dataSource.data = jobs;
+        this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
+      }
     });
   }
 
