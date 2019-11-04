@@ -7,7 +7,7 @@
     <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8" matSort>
 
       <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay; let i = index">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{column}} </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{columnTitles[i]}} </th>
         <td mat-cell *matCellDef="let job"> {{job[columnsToDisplay[i]]}} </td>
       </ng-container>
   

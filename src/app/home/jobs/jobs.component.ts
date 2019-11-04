@@ -24,6 +24,7 @@ export class JobsComponent implements AfterViewInit {
   dataSource = new MatTableDataSource<IJob>([]);
 
   columnsToDisplay = ['jobname', 'jobid', 'status', 'retcode']; // IJob column titles
+  columnTitles = ['Name', 'ID', 'Status', 'RC']; // IJob column titles
 
   expandedJob: IJob | null;
 
@@ -54,6 +55,7 @@ export class JobsComponent implements AfterViewInit {
   }
 
   setExpanded(job) {
+    // TODO(Kelosky): broken
     console.log(`Expanded trigger clicked for ${job.name}`);
     this.expandedJob = this.expandedJob === job ? null : job;
   }
