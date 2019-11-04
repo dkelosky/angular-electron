@@ -17,11 +17,14 @@ export class ToolbarComponent implements OnInit {
   async ngOnInit() {
 
     this.ps.selectedProfile.subscribe(async (profile) => {
-      console.log(`Profile loaded ${profile.name}`)
+      console.log(`Profile loaded ${profile.name}`);
       this.currentProfile = profile;
-      this.profiles = (await this.ps.getAllZosmf()).filter((prof) => prof.name !== this.currentProfile.name); // filter out the default
-      
     });
+
+    this.ps.allProfiles.subscribe(async (profiles) => {
+      this.profiles = profiles.filter((prof) => prof.name !== this.currentProfile.name); // filter out the default
+    });
+
   }
 
   change(profile: IProfileLoaded) {
