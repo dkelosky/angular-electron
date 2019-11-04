@@ -18,6 +18,7 @@ import {
   MatSortModule,
   MatProgressBarModule,
   MatProgressSpinnerModule,
+  MatTabsModule,
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     CdkTableModule,
     MatIconModule,
+    MatTabsModule,
     MatButtonModule,
     MatDividerModule,
     MatMenuModule,
@@ -49,6 +51,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     CdkTableModule,
     MatIconModule,
+    MatTabsModule,
     MatButtonModule,
     MatDividerModule,
     MatMenuModule,

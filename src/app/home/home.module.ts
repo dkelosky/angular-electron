@@ -8,9 +8,11 @@ import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { IndeterminateLoadingComponent } from './indeterminate-loading/indeterminate-loading.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { ProfilesComponent } from './profiles/profiles.component';
 
 @NgModule({
-  declarations: [HomeComponent, ToolbarComponent, IndeterminateLoadingComponent],
+  declarations: [HomeComponent, ToolbarComponent, IndeterminateLoadingComponent, JobsComponent, ProfilesComponent],
   imports: [CommonModule,
     SharedModule,
     HomeRoutingModule,
